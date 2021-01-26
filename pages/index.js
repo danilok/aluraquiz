@@ -6,12 +6,8 @@ import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
+import Head from 'next/head'
+import Link from 'next/link'
 
 const QuizContainer = styled.div`
   width: 100%;
@@ -27,23 +23,28 @@ const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
-
+      <Head>
+        <title>Aluraquiz - Imersão React</title>
+        <meta property="og:title" content="Aluraquiz - Imersão React" key="title" />
+        <meta property="og:image" content={db.bg} key="title" />
+      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Caixa 1</h1>
+            <h1>Quiz de educação financeira</h1>
           </Widget.Header>
           <Widget.Content>
 
-            <p>lorem ipsum color sit amet...</p>
+            <p>Vamos ver se você tem investido bem seu tempo em conhecimento!</p>
+            <Link href="/quiz"><button>Desafio! Link para Quiz</button></Link>
           </Widget.Content>
         </Widget>
         <Widget>
           <Widget.Content>
-            <h1>Caixa 2</h1>
+            <h1>Quizes da galera</h1>
 
-            <p>lorem ipsum color sit amet...</p>
+            <p>Aqui terá uma lista de quizes</p>
           </Widget.Content>
         </Widget>
         <Footer />
