@@ -1,6 +1,7 @@
-import QuizBackground from '../src/components/QuizBackground'
+import React from 'react';
+import QuizBackground from '../src/components/QuizBackground';
 import db from '../db.json';
-import Widget from '../src/components/Widget'
+import Widget from '../src/components/Widget';
 
 export default function Quiz() {
   return (
@@ -11,5 +12,5 @@ export default function Quiz() {
         </Widget.Content>
       </Widget>
     </QuizBackground>
-  )
+  );
 }
