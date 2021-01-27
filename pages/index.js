@@ -8,15 +8,54 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
+import QuizContainer from '../src/components/QuizContainer';
 
-const QuizContainer = styled.div`
+// const QuizContainer = styled.div`
+//   width: 100%;
+//   max-width: 350px;
+//   padding-top: 45px;
+//   margin: auto 10%;
+//   @media screen and (max-width: 500px) {
+//     margin: auto;
+//     padding: 15px;
+//   }
+// `;
+
+const Input = styled.input`
+  width: 283px;
+  height: 40px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.15px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+
+  border-radius: 3.5px;
+
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+`;
+
+const ButtonPlay = styled.button`
+  background: #FFFFFF;
   width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
+  font-size: 20px;
+  margin-top: 15px;
+  color: ${({ theme }) => theme.colors.primary};
+
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+
+  &:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
   }
 `;
 
@@ -43,18 +82,18 @@ export default function Home() {
               router.push(`/quiz?name=${name}`);
             }}
             >
-              <input
+              <Input
                 onChange={(e) => {
                   // State
                   setName(e.target.value);
                 }}
-                placeholder="Diz seu nome aí, jogador!"
+                placeholder="Diz seu nome aí, futuro bilionário!"
               />
               <br />
-              <button type="submit" disabled={name.length === 0}>
+              <ButtonPlay type="submit" disabled={name.length === 0}>
                 {'Jogar '}
                 {name}
-              </button>
+              </ButtonPlay>
             </form>
           </Widget.Content>
         </Widget>
