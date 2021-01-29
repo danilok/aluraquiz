@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { useRouter } from 'next/router';
+import styled from 'styled-components';
 
 import PropTypes from 'prop-types';
 import db from '../db.json';
@@ -10,6 +11,28 @@ import QuizContainer from '../src/components/QuizContainer';
 import QuizLogo from '../src/components/QuizLogo';
 import Button from '../src/components/Button';
 
+const Loader = styled.div`
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid ${({ theme }) => theme.colors.secondary};
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin-left: 40%;
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+`;
+
 function LoadingWidget() {
   return (
     <Widget>
@@ -18,7 +41,7 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        <Loader />
       </Widget.Content>
     </Widget>
   );
@@ -68,6 +91,7 @@ function QuestionWidget({
               <Widget.Topic
                 as="label"
                 htmlFor={alternativeId}
+                key={alternativeId}
               >
                 <input
                   style={{ display: 'none' }}
