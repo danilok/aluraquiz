@@ -5,29 +5,128 @@
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "title": "Quais as fases do ciclo de vida do investidor?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Acumulação, preservação, ostentação",
+        "Ostentação, acumulação, dívidas",
+        "Gastação, ostentação, acumulação",
+        "Acumulação, multiplicação, preservação"
       ]
     },
     {
       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "title": "Marque a alternativa que não representa um investimento em renda fixa.",
+      "description": "Não é tão difícil",
+      "answer": 1,
+      "alternatives": [
+         "Tesouro Prefixado",
+         "Ações",
+         "Tesouro SELIC",
+         "CDB"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "O que é IPCA?",
+      "description": "Essa é pra aquecer",
+      "answer": 3,
+      "alternatives": [
+        "Indexador atrelado a taxa de Juros SELIC",
+        "Indexador atrelado ao índice Bovespa",
+        "Indexador atrelado ao IFIX",
+        "Indexador atrelado a inflação"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "Qual a taxa selic atual (01/2021)?",
+      "description": "Essa é pra aquecer",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "2% a.a",
+        "4% a.a",
+        "10% a.a",
+        "2% a.m"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "Antes de começar a investir o que você precisa fazer?",
+      "description": "Essa é pra aquecer",
+      "answer": 1,
+      "alternatives": [
+        "Fazer academia",
+        "Pagar todas suas dívidas",
+        "Se benzer na igreja",
+        "Comprar tudo que você quiser"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "Quanto rende a poupança atual?",
+      "description": "Essa é pra aquecer",
+      "answer": 2,
+      "alternatives": [
+        "80% da SELIC",
+        "100% do IPCA",
+        "70% da SELIC",
+        "10x do IPCA"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "Em relação ao tempo de investimento, qual a alternativa que não contém uma classificação correta?",
+      "description": "Essa é pra aquecer",
+      "answer": 1,
+      "alternatives": [
+        "Longo prazo",
+        "Para sempre",
+        "Curto prazo",
+        "Médio prazo"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "O que significa liquidez de um investimento?",
+      "description": "Essa é pra aquecer",
+      "answer": 3,
+      "alternatives": [
+        "Lavar dinheiro",
+        "Quantidade de água que dá para comprar com o valor do investimento",
+        "A capacidade de tornar dinheiro em investimento",
+        "A capacidade de tornar um investimento em dinheiro"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "O que significa LCI?",
+      "description": "Essa é pra aquecer",
+      "answer": 1,
+      "alternatives": [
+        "Letra de certificado imobiliário",
+        "Letra de crédito imobiliário",
+        "Letra de certificado internacional ",
+        "Lista de crédito internacional"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "Quais das alternativas é um investimento em renda variável?",
+      "description": "Essa é pra aquecer",
+      "answer": 2,
+      "alternatives": [
+        "CDB",
+        "LCI",
+        "FII",
+        "Debênture"
       ]
     }
   ],
   "external": [
-    ""
+    "https://ghibliquiz.ygoryamanaca.vercel.app/",
+    "https://chessquiz-alura.leo0liveira.vercel.app/"
   ],
   "theme": {
     "colors": {

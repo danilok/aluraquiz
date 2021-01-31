@@ -63,6 +63,9 @@ Widget.Topic = styled.a`
   &:focus {
     opacity: .5;
   }
+  &:visited {
+    color: ${({ theme }) => theme.colors.constrastText};
+  }
 `;
 
 export default Widget;
